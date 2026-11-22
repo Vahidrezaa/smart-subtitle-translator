@@ -1,0 +1,16 @@
+﻿1
+00:00:01,000 --> 00:00:03,500
+[آفلاین] Hello everyone and welcome back to the channel.
+
+2
+00:00:03,500 --> 00:00:06,000
+[آفلاین] Today the we are talking about dependency injection in Python.
+
+3
+00:00:06,000 --> 00:00:09,200
+[آفلاین] This pattern makes testing so much easier, trust me.
+
+4
+00:00:09,200 --> 00:00:12,000
+[آفلاین] Let's dive right into it and see how it works in practice.
+

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-subtitle-translator"
+version = "0.1.0"
+description = "Translate English SRT subtitles into natural, context-aware Persian using an LLM API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6>=6.6",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+secure = ["keyring>=24"]
+dev = ["pytest>=8", "keyring>=24"]
+
+[project.scripts]
+smart-subtitle-translator = "app.main:main"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["app/tests"]
+addopts = "-q"
